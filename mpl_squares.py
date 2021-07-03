@@ -1,9 +1,11 @@
 import matplotlib.pyplot as plt
 
-squares = [x*x for x in range(1,101)]
+input_values = range(1,11)
+squares = [x*x for x in range(1,11)]
 
+plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.plot(squares, linewidth=3)
+ax.plot(input_values, squares, linewidth=3)
 
 # Задати назву для графіка та кожної з осей.
 ax.set_title("Square Numbers", fontsize=24)
